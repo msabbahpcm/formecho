@@ -22,7 +22,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 /* Comparison page */
 main.wide { max-width: 900px; }
 .status { border: 1.5px dashed var(--ink); padding: 8px 12px; font-size: 15px; }
-img.shot { display: block; width: 100%; height: auto; margin: 26px 0 8px; border: 2.5px solid var(--ink); box-shadow: 9px 9px 0 var(--ink); }
+img.shot, video.shot { display: block; width: 100%; height: auto; margin: 26px 0 8px; border: 2.5px solid var(--ink); box-shadow: 9px 9px 0 var(--ink); }
 .ledger { overflow-x: auto; margin: 16px 0 6px; border: 2.5px solid var(--ink); background: color-mix(in srgb, var(--paper) 55%, #fff); }
 @media (prefers-color-scheme: dark) { .ledger { background: color-mix(in srgb, var(--paper) 80%, #fff); } }
 table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 15px; }
