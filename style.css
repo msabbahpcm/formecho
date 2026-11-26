@@ -36,3 +36,16 @@ td.q { color: var(--muted); font-style: italic; }
 .note, .fine { font-size: 14px; color: var(--muted); }
 ul.ticks.no li::before { content: "\2013"; color: var(--red); }
 .foot { margin-top: 40px; padding-top: 14px; border-top: 1.5px solid var(--ink); }
+/* Phones: the comparison table becomes one card per row, so no column is hidden off the edge. */
+@media (max-width: 640px) {
+  table { min-width: 0; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  tbody tr { display: block; border-bottom: 2.5px solid var(--ink); }
+  tbody tr:last-child { border-bottom: 0; }
+  tbody th, tbody td { display: block; width: auto; border-inline-start: 0; }
+  tbody th { border-bottom: 0; padding-bottom: 4px; font: 700 16px/1.25 "Bahnschrift", "DIN Alternate", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+  tbody td { display: grid; grid-template-columns: 42% 1fr; gap: 10px; padding: 7px 12px; }
+  tbody td::before { content: attr(data-l); font-style: normal; color: var(--muted); font-size: 13px; }
+  tbody td:nth-child(2)::before { color: var(--ink); font-weight: 700; }
+  tbody tr td:last-child { border-bottom: 0; }
+}
