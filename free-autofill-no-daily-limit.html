@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free form autofill for Chrome with no daily limit | FormEcho</title>
+<meta name="description" content="FormEcho saves a web form you filled and refills it in one click. Free, no daily limit, no account. A plain comparison with Lightning Autofill, including what FormEcho does not do yet.">
+<link rel="canonical" href="https://msabbahpcm.github.io/formecho/free-autofill-no-daily-limit.html">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wide">
+<p class="formno"><a href="./">FORMECHO</a> &middot; FORM FE-COMPARE</p>
+
+<h1 class="big">Autofill with<br><em>no daily limit.</em></h1>
+<p class="lead">FormEcho is a free Chrome extension. Fill a web form once, save it, and next time one click puts every answer back. No cap on how many times a day, and no account.</p>
+<p class="status">Chrome Web Store: submitted 26 November 2026, in review. The install link goes here when it is approved.</p>
+
+<img class="shot" src="img/one-click.jpg" width="1280" height="800" alt="A filled order form with a red stamp reading Filled in 1 click, and the FormEcho popup with its Fill button circled in pen.">
+
+<h2>Looking for a Lightning Autofill alternative?</h2>
+<p>Lightning Autofill is the best-known form filler for Chrome and does more than FormEcho. Its free plan now stops at 10 fills a day. If that limit is the only thing in your way, FormEcho may be all you need. If you rely on its scripting, the paid plan there is the better choice. The table says which is which.</p>
+
+<div class="ledger">
+<table>
+<thead><tr><th scope="col">&nbsp;</th><th scope="col">FormEcho</th><th scope="col">Lightning Autofill, free</th><th scope="col">Lightning Autofill, paid</th></tr></thead>
+<tbody>
+<tr><th scope="row">Price</th><td>Free</td><td>Free</td><td>$4.99 a month (Plus), $9.99 a month (Pro)</td></tr>
+<tr><th scope="row">Fills per day</th><td><b>No limit</b></td><td>10</td><td>No limit</td></tr>
+<tr><th scope="row">Account or sign-up</th><td>None</td><td class="q">Not checked</td><td>Needed to subscribe</td></tr>
+<tr><th scope="row">Save a filled form, refill in one click</th><td>Yes</td><td>Yes (macros)</td><td>Yes (macros)</td></tr>
+<tr><th scope="row">Custom dropdowns (Material UI, Ant Design, react-select, Radix)</th><td>Yes, tested on their public demo pages</td><td class="q">Not tested by us</td><td class="q">Not tested by us</td></tr>
+<tr><th scope="row">Text expansion and text clips</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+<tr><th scope="row">Your own JavaScript automation</th><td>No</td><td>No</td><td>Pro only</td></tr>
+<tr><th scope="row">Sync between devices</th><td>No. Back up to a file and restore it</td><td>No</td><td>Yes, through Google Sheets</td></tr>
+<tr><th scope="row">Fills CAPTCHAs</th><td>No, on purpose</td><td>No</td><td>reCAPTCHA autofill, Pro only</td></tr>
+<tr><th scope="row">Where your saved answers live</th><td>Only in Chrome on your device. No server</td><td class="q">Not checked</td><td>Google Sheets when sync is on</td></tr>
+<tr><th scope="row">Passwords and card numbers</th><td>Never saved</td><td class="q">Not checked</td><td class="q">Not checked</td></tr>
+<tr><th scope="row">Browsers</th><td>Chrome and other Chromium browsers</td><td>Chrome, Edge, Firefox</td><td>Chrome, Edge, Firefox</td></tr>
+<tr><th scope="row">Languages</th><td>English now; ten more in the next version</td><td class="q">Not checked</td><td class="q">Not checked</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Lightning Autofill's prices, plan contents and browser list were read from its own website on 26 November 2026. "Not checked" means exactly that: we did not verify it, so we do not claim it either way. If a line is wrong or out of date, <a href="https://github.com/msabbahpcm/formecho/issues">tell us</a> and it will be corrected.</p>
+
+<h2>What FormEcho does not do yet</h2>
+<ul class="ticks no">
+<li>No text snippets or text expansion.</li>
+<li>No filling the moment a page opens. You press Fill or Alt+Shift+F.</li>
+<li>No sync between computers, only a backup file you move yourself.</li>
+<li>No Firefox version.</li>
+<li>It cannot import forms saved in another extension. You save each form once more.</li>
+</ul>
+
+<h2>What it does well</h2>
+<img class="shot" src="img/field-types.jpg" width="1280" height="800" alt="A ledger listing field types FormEcho fills: custom dropdowns, modern web apps, tick boxes and radios, dates and numbers, forms inside frames, fields whose ids change.">
+<ul class="ticks">
+<li>Saves every answer on the page with one button, and names the fields it could not find when it fills.</li>
+<li>Works on React, Vue and Angular forms, including dropdowns that are not real select boxes.</li>
+<li>Keeps several versions of one form, for example one per customer.</li>
+<li>Reads a page only when you press Save, Fill or the shortcut. It has no access to your browsing history.</li>
+</ul>
+
+<h2>Will it stay free?</h2>
+<p>Saving forms and filling them are free with no daily limit, and that will not be taken back. If paid features come later, they will be additions, most likely sync between devices.</p>
+
+<h2>Another free option</h2>
+<p>QuickForm is a free record-and-replay form filler aimed at testers and developers. It is worth trying next to FormEcho; use whichever handles your forms better.</p>
+
+<p class="foot"><a href="./">Home</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="https://github.com/msabbahpcm/formecho/issues">Support</a></p>
+<p class="fine">Lightning Autofill is a product of Tohodo LLC. QuickForm belongs to its own developers. FormEcho is not affiliated with either.</p>
+</main>
+</body>
+</html>
