@@ -36,6 +36,8 @@ td.q { color: var(--muted); font-style: italic; }
 .note, .fine { font-size: 14px; color: var(--muted); }
 ul.ticks.no li::before { content: "\2013"; color: var(--red); }
 .foot { margin-top: 40px; padding-top: 14px; border-top: 1.5px solid var(--ink); }
+video.film { aspect-ratio: 1080 / 676; }
+@media (max-width: 640px) { video.film { aspect-ratio: 480 / 820; } }
 /* Phones: the comparison table becomes one card per row, so no column is hidden off the edge. */
 @media (max-width: 640px) {
   table { min-width: 0; }
