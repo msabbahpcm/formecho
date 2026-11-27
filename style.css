@@ -51,3 +51,11 @@ video.film { aspect-ratio: 1080 / 676; }
   tbody td:nth-child(2)::before { color: var(--ink); font-weight: 700; }
   tbody tr td:last-child { border-bottom: 0; }
 }
+
+.get { margin: 22px 0 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+a.install { display: inline-block; padding: 13px 22px 12px; background: var(--ink); color: var(--paper); text-decoration: none; border: 2.5px solid var(--ink); box-shadow: 7px 7px 0 var(--red); font: 700 21px/1 "Bahnschrift", "DIN Alternate", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; transition: transform .08s, box-shadow .08s; }
+a.install span { margin-inline-start: 10px; padding: 2px 7px; border: 1.5px solid currentColor; font-size: 13px; letter-spacing: .14em; vertical-align: 3px; }
+a.install:hover { transform: translate(3px, 3px); box-shadow: 4px 4px 0 var(--red); }
+a.install:active { transform: translate(7px, 7px); box-shadow: 0 0 0 var(--red); }
+.getnote { font-size: 13px; color: var(--muted); max-width: 30ch; line-height: 1.4; }
+@media (prefers-reduced-motion: reduce) { a.install { transition: none; } }
